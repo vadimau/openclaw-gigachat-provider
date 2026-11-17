@@ -1,0 +1,63 @@
+{
+  "name": "openclaw-gigachat-provider",
+  "version": "0.1.0",
+  "description": "GigaChat provider for OpenClaw with OAuth, Russian Trusted CA, and an embedded OpenAI-compatible bridge with tools support.",
+  "type": "module",
+  "main": "./index.js",
+  "license": "MIT",
+  "author": "Vadim Abrosimov",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vadimau/openclaw-gigachat-provider.git"
+  },
+  "homepage": "https://github.com/vadimau/openclaw-gigachat-provider#readme",
+  "bugs": {
+    "url": "https://github.com/vadimau/openclaw-gigachat-provider/issues"
+  },
+  "keywords": [
+    "openclaw",
+    "openclaw-plugin",
+    "gigachat",
+    "sber",
+    "llm",
+    "russian",
+    "openai-compatible"
+  ],
+  "files": [
+    "index.js",
+    "lib",
+    "certs",
+    "openclaw.plugin.json",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/transform.test.js test/bridge.test.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "openclaw": {
+    "extensions": [
+      "./index.js"
+    ],
+    "compat": {
+      "pluginApi": ">=2026.11.4"
+    },
+    "install": {
+      "clawhubSpec": "clawhub:vadimau/openclaw-gigachat-provider",
+      "npmSpec": "openclaw-gigachat-provider",
+      "defaultChoice": "clawhub",
+      "minHostVersion": ">=2026.11.4"
+    },
+    "build": {
+      "openclawVersion": "2026.11.4",
+      "bundledDist": false
+    },
+    "release": {
+      "publishToClawHub": true,
+      "publishToNpm": true
+    }
+  }
+}
