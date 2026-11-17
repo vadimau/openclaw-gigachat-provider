@@ -1,6 +1,6 @@
 {
   "name": "openclaw-gigachat-provider",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "GigaChat provider for OpenClaw with OAuth, Russian Trusted CA, and an embedded OpenAI-compatible bridge with tools support.",
   "type": "module",
   "main": "./index.js",
@@ -47,7 +47,6 @@
     },
     "install": {
       "clawhubSpec": "clawhub:vadimau/openclaw-gigachat-provider",
-      "npmSpec": "openclaw-gigachat-provider",
       "defaultChoice": "clawhub",
       "minHostVersion": ">=2026.11.4"
     },
@@ -56,8 +55,8 @@
       "bundledDist": false
     },
     "release": {
-      "publishToClawHub": true,
-      "publishToNpm": true
+      "publishToClawHub": true
     }
   }
 }
+

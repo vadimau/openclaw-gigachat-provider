@@ -46,16 +46,10 @@ OpenClaw ──OpenAI API──▶ 127.0.0.1:18080 ──GigaChat API──▶ a
 openclaw plugins install clawhub:vadimau/openclaw-gigachat-provider
 ```
 
-Из npm:
-
-```powershell
-openclaw plugins install npm:openclaw-gigachat-provider
-```
-
 Из GitHub:
 
 ```powershell
-openclaw plugins install git:github.com/vadimau/openclaw-gigachat-provider@v0.1.0
+openclaw plugins install git:github.com/vadimau/openclaw-gigachat-provider@v0.1.1
 ```
 
 Из локальной папки для разработки:
